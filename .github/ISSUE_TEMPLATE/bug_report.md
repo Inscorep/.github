@@ -1,8 +1,8 @@
 ---
-name: 'Bug report :bug:'
+name: Bug report
 about: Note bugs in the system that needs to be corrected
 title: ''
-labels: 'bug'
+labels: 'bug :bug:'
 assignees: ''
 
 ---
