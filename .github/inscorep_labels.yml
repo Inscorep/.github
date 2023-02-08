@@ -1,0 +1,65 @@
+- name: 'bug :bug:'
+  description: 'Something isn't working'
+  color: 'd73a4a'
+  aliases: ['bug :bug:']
+
+- name: 'documentation :book:'
+  description: 'Improvements or additions to documentation'
+  color: '0075ca'
+
+- name: 'new feature :rocket:'
+  description: 'New feature or request'
+  color: 'a2eeef'
+  aliases: ['new feature']
+
+- name: 'enhancement :hammer:'
+  description: 'Improvements to existing features'
+  color: 'a2eeef'
+  aliases: ['enhancement']
+
+- name: 'breaking change :rotating_light:'
+  description: 'Breaking changes'
+  color: 'd93f0b'
+
+- name: 'data correction :file_cabinet:'
+  description: 'Corrections to data'
+  color: 'b7f279'
+
+- name: 'data initialization :file_cabinet:'
+  description: 'Initialization of data'
+  color: 'f279cd'
+
+- name: 'data update :file_cabinet:'
+  description: 'Update of data'
+  color: '79f286'
+
+- name: 'data deletion :file_cabinet:'
+  description: 'Deletion of data'
+  color: 'e4f279'
+
+- name: 'data creation :file_cabinet:'
+  description: 'Creation of data'
+  color: 'f2c379'
+
+- name: 'data migration :file_cabinet:'
+  description: 'Migration of data'
+  color: 'f2a479'
+
+- name: 'planning :calendar:'
+  description: 'Planning'
+  color: '79a2f2'
+
+- name: 'devops :toolbox:'
+  description: 'Devops'
+  color: 'f29079'
+  aliases: ['devops :toolbox:']
+
+- name: 'security :lock:'
+  description: 'Security'
+  color: 'd93f0b'
+  aliases: ['security']
+
+- name: 'need more info ❓'
+  description: 'More information is needed'
+  color: 'd93f0b'
+  aliases: ['need additional info :question:']
