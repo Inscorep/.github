@@ -1,5 +1,5 @@
 - name: 'bug :bug:'
-  description: 'Something isn't working'
+  description: "Something isn''t working"
   color: 'd73a4a'
   aliases: ['bug :bug:']
 
