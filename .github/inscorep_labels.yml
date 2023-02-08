@@ -1,0 +1,66 @@
+- name: bug🐛:
+  description: "Something isn't working"
+  color: "d73a4a"
+  aliases: ["bug :bug:"]
+
+- name: documentation📖:
+  description: "Improvements or additions to documentation"
+  color: "0075ca"
+
+- name: new feature🚀:
+  description: "New feature or request"
+  color: "a2eeef"
+  aliases: ["new feature"]
+
+- name: enhancement🔨:
+  description: "Improvements to existing features"
+  color: "a2eeef"
+  aliases: ["enhancement"]
+
+- name: breaking change🚨:
+  description: "Breaking changes"
+  color: "d93f0b"
+
+- name: data correction📝:
+  description: "Corrections to data"
+  # set random hex color
+  color: "b7f279"
+
+- name: data initialization📝:
+  description: "Initialization of data"
+  color: "f279cd"
+
+- name: data update📝:
+  description: "Update of data"
+  color: "79f286"
+
+- name: data deletion📝:
+  description: "Deletion of data"
+  color: "e4f279"
+
+- name: data creation📝:
+  description: "Creation of data"
+  color: "f2c379"
+
+- name: data migration📝:
+  description: "Migration of data"
+  color: "f2a479"
+
+- name: planning📆:
+  description: "Planning"
+  color: "79a2f2"
+
+- name: devops🧰:
+  description: "Devops"
+  color: "f29079"
+  aliases: ["devops :toolbox:"]
+
+- name: security🔒:
+  description: "Security"
+  color: "d93f0b"
+  aliases: ["security"]
+
+- name: need more info❓:
+  description: "More information is needed"
+  color: "d93f0b"
+  aliases: ["need additional info :question:"]
