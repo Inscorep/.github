@@ -6,6 +6,7 @@
 - name: 'documentation :book:'
   description: 'Improvements or additions to documentation'
   color: '0075ca'
+  aliases: []
 
 - name: 'new feature :rocket:'
   description: 'New feature or request'
@@ -20,34 +21,42 @@
 - name: 'breaking change :rotating_light:'
   description: 'Breaking changes'
   color: 'd93f0b'
+  aliases: []
 
 - name: 'data correction :file_cabinet:'
   description: 'Corrections to data'
   color: 'b7f279'
+  aliases: []
 
 - name: 'data initialization :file_cabinet:'
   description: 'Initialization of data'
   color: 'f279cd'
+  aliases: []
 
 - name: 'data update :file_cabinet:'
   description: 'Update of data'
   color: '79f286'
+  aliases: []
 
 - name: 'data deletion :file_cabinet:'
   description: 'Deletion of data'
   color: 'e4f279'
+  aliases: []
 
 - name: 'data creation :file_cabinet:'
   description: 'Creation of data'
   color: 'f2c379'
+  aliases: []
 
 - name: 'data migration :file_cabinet:'
   description: 'Migration of data'
   color: 'f2a479'
+  aliases: []
 
 - name: 'planning :calendar:'
   description: 'Planning'
   color: '79a2f2'
+  aliases: []
 
 - name: 'devops :toolbox:'
   description: 'Devops'
