@@ -45,3 +45,23 @@ LABEL_GROUPS:
     need more info❓:
       description: "More information is needed"
       color: "d93f0b"
+REPOS:
+  app-service-sigma-backend:
+  app-service-sigma-frontend:
+  dbw-sigma:
+  dbw-sigma-datalake:
+  dbw-sigma-datamart-accounting:
+  dbw-sigma-datamart-actuarial:
+  dbw-sigma-datamart-claims:
+  dbw-sigma-ifrs17:
+  dbw-sigma-lakehouse:
+  fun-grail-emailer:
+  fun-hr-san-sigma-dl:
+  issues-compass:
+  issues-inscorep:
+  issues-inscorep-admin:
+  legacy-single-scripts:
+  sigma-app-server-maintenance:
+  sigma-sql-code:
+  utilio:
+  utilio-compass:
