@@ -10,6 +10,7 @@ body:
       required: false
   - type: textarea
     id: tasks
+    label: ""
     attributes:
       value: |
           ```[tasklist]
