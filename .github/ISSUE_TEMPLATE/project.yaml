@@ -11,11 +11,10 @@ body:
   - type: textarea
     id: tasks
     attributes:
-      label: Tasks
       value: |
           ```[tasklist]
           ### Tasks
           - [ ] 
-          ```
+          ``` 
     validations:
       required: false
