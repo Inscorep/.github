@@ -14,7 +14,7 @@ body:
       value: |
           ```[tasklist]
           ### Tasks
-          - [ ] 
+          - [ ] Create proposal for ...
           ``` 
     validations:
       required: false
