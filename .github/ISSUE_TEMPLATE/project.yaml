@@ -11,10 +11,9 @@ body:
   - type: textarea
     id: tasks
     attributes:
-      label: ""
+      label: "Tasks"
       value: |
           ```[tasklist]
-          ### Tasks
           - [ ] Create proposal for ...
           ``` 
     validations:
