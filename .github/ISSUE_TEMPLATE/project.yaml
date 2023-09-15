@@ -1,0 +1,21 @@
+name: Project Issue
+description: Create a new project issue
+labels: ["project :file_folder:"]
+projects: ["inscorep/5"]
+body:
+  - type: textarea
+    attributes:
+      label: "Definition of Done"
+    validations:
+      required: false
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      value: |
+          ```[tasklist]
+          ### Tasks
+          - [ ] 
+          ```
+    validations:
+      required: false
