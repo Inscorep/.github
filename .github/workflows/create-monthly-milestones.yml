@@ -1,0 +1,43 @@
+name: Create Monthly Milestones (reusable)
+
+on:
+  workflow_call:
+
+jobs:
+  create-milestone:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Calculate next month milestone
+        id: next-month
+        run: |
+          CURRENT_YEAR=$(date +%Y)
+          CURRENT_MONTH=$(date +%m)
+
+          if [ "$CURRENT_MONTH" = "12" ]; then
+            NEXT_YEAR=$((CURRENT_YEAR + 1))
+            NEXT_MONTH="01"
+          else
+            NEXT_YEAR=$CURRENT_YEAR
+            NEXT_MONTH=$(printf "%02d" "$(( 10#$CURRENT_MONTH + 1 ))")
+          fi
+
+          MILESTONE_TITLE="v${NEXT_YEAR}.${NEXT_MONTH}"
+          echo "milestone=$MILESTONE_TITLE" >> "$GITHUB_OUTPUT"
+          echo "Next month milestone: $MILESTONE_TITLE"
+
+      - name: Create milestone
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          MILESTONE_TITLE="${{ steps.next-month.outputs.milestone }}"
+
+          if gh api "repos/$REPO/milestones" --paginate --jq '.[].title' | grep -qx "$MILESTONE_TITLE"; then
+            echo "Milestone already exists: $MILESTONE_TITLE"
+          else
+            gh api --method POST "repos/$REPO/milestones" -f title="$MILESTONE_TITLE"
+            echo "Created milestone: $MILESTONE_TITLE"
+          fi
